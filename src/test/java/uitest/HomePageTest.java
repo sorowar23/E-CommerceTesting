@@ -7,8 +7,10 @@ import uipages.ProductDetailsPage;
 import uipages.HomePage;
 import uipages.LoginPage;
 import utilities.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 
-@Listeners(utilities.TestListener.class)
 public class HomePageTest
 {
 	private WebDriver driver;
@@ -16,7 +18,7 @@ public class HomePageTest
 	HomePage homePage;
 	ProductDetailsPage productPage;
 	private static ExtentTest EXTENT_TEST;
-	
+
 	@BeforeClass
 	public void setUp() 
 	{

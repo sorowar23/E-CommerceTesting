@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="UI Testing">
+<suite name="System Smoke Testing">
 <listeners>
 	<listener class-name="utilities.TestListener"></listener>
 </listeners>
-
-  <test name="LoginPageTest" preserve-order="true" enabled="true">
-    <classes>
-      	<class name="uitest.LoginPageTest"></class>
-     </classes>
-  </test> 
-  
+    <test name="E-Commerce Project Tests" preserve-order="true" enabled="true">
+        <classes>
+            <class name="uitest.HomePageTest"></class>
+            <class name="uitest.ProductDetailsPageTest"></class>
+            <class name="uitest.LoginPageTest"></class>
+        </classes>
+    </test>
 </suite>
