@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Testing">
+<listeners>
+	<listener class-name="utilities.TestListener"></listener>
+</listeners>
+  <test name="API Tests" preserve-order="true" enabled="true">
+      <classes>
+      	<class name="apitest.RestApiTesting"></class>
+      </classes>
+  </test> 
+</suite> 
